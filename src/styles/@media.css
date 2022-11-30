@@ -1,0 +1,26 @@
+.featurette-heading {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+    padding-top: 120px;
+  }
+ 
+@media screen 
+and (max-width : 991px) {
+    #img{
+        height: 400px;
+    }
+}
+
+@media screen 
+and (max-width : 576px) {
+    #img{
+        height: 450px;
+        width: 300%;
+        margin-left: -100%;
+    }
+    #carousel__img{
+        overflow: hidden;
+    }
+}
