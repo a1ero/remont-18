@@ -55,11 +55,11 @@ function Footer () {
                             </p>
                             <p>
                                 <MDBIcon color='secondary' icon='envelope' className='me-3' />
-                                remont-18udm@yandex.ru
+                                email@email.ru
                             </p>
                             <p>
                                 <MDBIcon color='secondary' icon='phone' className='me-3' />
-                                +79043185629
+                                +79999999999
                             </p>
                         </MDBCol>
                     </MDBRow>
