@@ -30,8 +30,8 @@ function Header () {
                     <Dropdown>
                         <Dropdown.Toggle variant="dark" id="dropdown-basic">Контакты</Dropdown.Toggle>
                         <Dropdown.Menu>
-                            <Dropdown.Item href="tel:+79043185629" ><img src={TEL} height="20" alt="Phone"/>&nbsp;&nbsp;89043185629</Dropdown.Item>
-                            <Dropdown.Item href="https://t.me/Valentin13579"><img src={TG} height="20" alt="Telegram"/>&nbsp;&nbsp;Telegram</Dropdown.Item>
+                            <Dropdown.Item href="tel:+79999999999" ><img src={TEL} height="20" alt="Phone"/>&nbsp;&nbsp;89999999999</Dropdown.Item>
+                            <Dropdown.Item href="https://t.me/name"><img src={TG} height="20" alt="Telegram"/>&nbsp;&nbsp;Telegram</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
