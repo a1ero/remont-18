@@ -5,14 +5,24 @@
     letter-spacing: -1px;
     padding-top: 120px;
   }
- 
+@media screen 
+and (max-width : 1359px) {
+    #img{
+        height: 550px;
+    }
+}  
 @media screen 
 and (max-width : 991px) {
     #img{
         height: 400px;
     }
 }
-
+@media screen 
+and (max-width : 735px) {
+    #img{
+        height: 350px;
+    }
+}
 @media screen 
 and (max-width : 576px) {
     #img{
