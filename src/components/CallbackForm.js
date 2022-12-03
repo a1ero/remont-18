@@ -1,7 +1,9 @@
 import React, { useRef, useState } from "react";
 import { Button, Container, Form } from "react-bootstrap";
+import MaskedInput from "react-maskedinput";
 import { Send } from "react-bootstrap-icons";
 import emailjs from '@emailjs/browser'
+import { FormControl } from "react-bootstrap";
 
 const CallbackForm = () => {
     const form = useRef();
@@ -10,14 +12,18 @@ const CallbackForm = () => {
     const sendEmail = (e)=> {
         e.preventDefault();
         setButtonText('Отправка...')
-        emailjs.sendForm('service_id', 'template_id', form.current, 'public_key')
+        emailjs.sendForm('service_6r965ou', 'template_r2v1gbg', form.current, '2hkrfA8FylK9k2Fnc')
         .then((result) => {
             console.log(result.text);
-            setButtonText('Успешно')
+            setButtonText('Успех!')
+            setTimeout(function(){
+                window.location.reload(1);
+             }, 3000);
         }, 
         (error) => { 
             console.log(error.text);
             setButtonText('Ошибка')
+            alert('Упс, что-то пошло не так, попробуйте снова.')
       });
     };
 
@@ -36,12 +42,12 @@ const CallbackForm = () => {
                 </Form.Group>
                 <br/>
                 <Form.Group controlId="formBasicPhone">
-                    <Form.Control 
+                    <FormControl as={MaskedInput}  
                         required 
-                        type="tel" 
+                        type='text' 
                         name="form_phone" 
-                        placeholder="+79999999999"
-                    />
+                        mask="+7(111)111-11-11"
+                        placeholder="+7(999)999-99-99"/>
                     <Form.Text>Мы никогда не будем делиться вашим номером с кем-либо еще.</Form.Text>
                 </Form.Group>
                 <br/>
