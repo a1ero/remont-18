@@ -12,7 +12,7 @@ const CallbackForm = () => {
     const sendEmail = (e)=> {
         e.preventDefault();
         setButtonText('Отправка...')
-        emailjs.sendForm('service_6r965ou', 'template_r2v1gbg', form.current, '2hkrfA8FylK9k2Fnc')
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
         .then((result) => {
             console.log(result.text);
             setButtonText('Успех!')
